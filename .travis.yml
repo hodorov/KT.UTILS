@@ -12,5 +12,6 @@ before_cache:
 
 cache:
   directories:
+    - $HOME/.gradle/5.4.1/
     - $HOME/.gradle/caches/modules-2/
     - $HOME/.gradle/wrapper/dists/
