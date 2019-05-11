@@ -10,7 +10,7 @@ class JacksonKotlinConfiguration {
 
     @Bean
     fun objectMapper() : ObjectMapper {
-        val om = objectMapper()
+        val om = ObjectMapper()
         om.registerModule(KotlinModule())
         return om
     }
