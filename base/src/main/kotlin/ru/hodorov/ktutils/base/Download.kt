@@ -1,4 +1,4 @@
-package ru.hodorov.ktutils
+package ru.hodorov.ktutils.base
 
 import mu.KotlinLogging
 import java.io.File

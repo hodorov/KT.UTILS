@@ -1,1 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.hodorov.ktutils.autoconfigure.JacksonKotlinConfiguration
