@@ -1,7 +1,6 @@
 plugins {
     val kotlinVersion = "1.3.31"
 
-    maven
     id("io.spring.dependency-management") version "1.0.6.RELEASE" apply false
     id("org.jetbrains.kotlin.jvm") version kotlinVersion
     id("org.jetbrains.kotlin.plugin.spring") version kotlinVersion
@@ -20,6 +19,7 @@ allprojects {
 }
 
 subprojects {
+    apply(plugin = "maven")
     apply(plugin = "org.jetbrains.kotlin.jvm")
     apply(plugin = "org.jetbrains.kotlin.plugin.spring")
     apply(plugin = "io.spring.dependency-management")
