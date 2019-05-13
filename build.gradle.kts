@@ -30,10 +30,10 @@ subprojects {
             jvmTarget = "1.8"
         }
     }
-}
 
-tasks {
-    artifacts {
-        archives(jar)
+    tasks{
+        artifacts {
+            archives(jar)
+        }
     }
 }
