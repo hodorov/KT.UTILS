@@ -16,7 +16,7 @@ public object FXLogger {
         val os = TextAreaOutputStream(textArea)
 
         val ple = PatternLayoutEncoder()
-        ple.pattern = "%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){faint} %clr(%5p) %clr(4234){magenta} %clr(---){faint} %clr([%15.15t]){faint} %clr(%-40.40logger{39}){cyan} %clr(:){faint} %m%n%wEx"
+        ple.pattern = "%d{yyyy-MM-dd HH:mm:ss.SSS} %5p [%15.15t] %-40.40logger{39} : %m%n%wEx"
         ple.context = loggerContext
         ple.start()
 
