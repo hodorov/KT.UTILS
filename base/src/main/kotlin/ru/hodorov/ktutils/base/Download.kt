@@ -8,6 +8,7 @@ import java.net.URL
 import java.util.*
 
 private val log = KotlinLogging.logger { }
+private const val MAX_BUFFER_SIZE = 1000000 // Bytes
 
 class Download(private val url: URL, private val file: File) : Observable(), Runnable {
 
@@ -89,10 +90,6 @@ class Download(private val url: URL, private val file: File) : Observable(), Run
     private fun stateChanged() {
         setChanged()
         notifyObservers()
-    }
-
-    companion object {
-        private val MAX_BUFFER_SIZE = 1000000 // Bytes
     }
 
     enum class DownloadStatus {

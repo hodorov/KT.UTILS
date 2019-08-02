@@ -1,0 +1,1 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=ru.hodorov.ktutils.h2.autoconfigure.H2Configuration

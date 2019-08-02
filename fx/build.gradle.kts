@@ -1,4 +1,6 @@
+val logbackVersion = project.extra.get("logbackVersion")
+
 dependencies {
     compile(project(":base"))
-    compile("ch.qos.logback:logback-classic:1.2.3")
+    compile("ch.qos.logback:logback-classic:$logbackVersion")
 }

@@ -36,4 +36,13 @@ subprojects {
             archives(jar)
         }
     }
+
+    extra.apply {
+        set("springVersion", "5.1.7.RELEASE")
+        set("springBootVersion", "2.1.6.RELEASE")
+        set("logbackVersion", "1.2.3")
+        set("kotlinLoggingVersion", "1.6.24")
+        set("jacksonVersion", "2.9.8")
+        set("h2Version", "1.4.199")
+    }
 }
