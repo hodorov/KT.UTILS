@@ -2,4 +2,4 @@ rootProject.name = "kt_utils"
 
 include(":base")
 include(":fx")
-include(":h2")
+include(":h2-starter")

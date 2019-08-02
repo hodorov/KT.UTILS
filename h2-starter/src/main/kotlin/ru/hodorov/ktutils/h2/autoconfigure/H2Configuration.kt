@@ -1,3 +1,5 @@
+@file:Suppress("SpringJavaInjectionPointsAutowiringInspection")
+
 package ru.hodorov.ktutils.h2.autoconfigure
 
 import org.springframework.beans.factory.annotation.Autowired
