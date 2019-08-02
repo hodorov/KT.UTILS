@@ -1,5 +1,5 @@
 plugins {
-    val kotlinVersion = "1.3.31"
+    val kotlinVersion = "1.3.41"
 
     id("io.spring.dependency-management") version "1.0.6.RELEASE" apply false
     id("org.jetbrains.kotlin.jvm") version kotlinVersion
