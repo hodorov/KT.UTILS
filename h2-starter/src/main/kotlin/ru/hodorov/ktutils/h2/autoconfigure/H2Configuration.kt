@@ -3,7 +3,6 @@
 package ru.hodorov.ktutils.h2.autoconfigure
 
 import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
 import org.springframework.boot.jdbc.DataSourceBuilder
 import org.springframework.context.annotation.Bean
@@ -14,13 +13,12 @@ import javax.sql.DataSource
 
 
 @Configuration
-@EnableAutoConfiguration(exclude = [DataSourceAutoConfiguration::class])
-class H2Configuration {
+class H2Configuration: DataSourceAutoConfiguration() {
 
     @Autowired
     private lateinit var appFolderService: AppFolderService
 
-    @Bean
+    @Bean(name = ["H2DataSource"])
     @Primary
     fun dataSource(): DataSource {
         return DataSourceBuilder.create()
